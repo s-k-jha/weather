@@ -8,7 +8,8 @@
 
 :root{
      --main-bg: #1e272e;
-     --main-color: #0097e6;
+     /* --main-color: #0097e6; */
+     --main-color: #00e1d9;
 }
 html{
     font-size: 62.5%;
@@ -106,16 +107,21 @@ body{
 }
 /* temp input field style code  */
 .temp_form{
+    border: 2px solid black;
+    border-radius: 39px;
     width: 80%;
     position: relative;
     margin: 10rem auto 6rem;
 
 }
 .temp_form input[type="text"]{
+   
     width: 100%;
     padding: 2rem 5rem 2rem 2rem ;
-    background : #1e202b;
-    color: white;
+    /* background : #1e202b; */
+    background: #9fafca;
+    /* color: white; */
+    color: black;
     outline: none;
     border: none;
     font-size: 1.7rem;
@@ -123,16 +129,19 @@ body{
 
 }
 ::placeholder{
-    color: #bfc1c8;
+    /* color: #bfc1c8; */
+    color: black;
 
 }
 .temp_form input[type="submit"]{
+    
     position: absolute;
     top: 5px;
     right: 5px;
     bottom: 5px;
     border: none;
-    background: #009ad8;
+    /* background: #009ad8; */
+    background:#0a476a;
     padding: 0 3rem;
     border-radius: 3rem;
     color: white;
@@ -140,8 +149,9 @@ body{
 
 }
 .temp_form input[type="submit"]:hover{
-    color: #009ad8;
+    color: #333;
     background-color: #fff;
+    border: 2px solid black;
 }
 
 /* temp detail styling */
@@ -159,7 +169,8 @@ body{
 .top_layer{
     /* width: 100px; */
     height: 20%;
-    background-color: #062b41;
+    background-color: #0a476a;
+    /* background-color: #9fafca; */
     display: flex;
     justify-content: space-between;
     align-items: center;
