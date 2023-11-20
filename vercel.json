@@ -1,15 +1,25 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/app.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/app.js"
+      "dest": "/app.js"
     }
-  ]
+  ],
+  "builds": [
+    {
+      "src": "/public/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/templates/**",
+      "use": "@vercel/node"
+    }
+  ],
+  "functions": {
+    "api/app.js": {
+      "runtime": "nodejs16.x",
+      "memory": 512
+    }
+  }
 }
