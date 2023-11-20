@@ -51,3 +51,5 @@ app.get("*",(req, res)=>{
 app.listen(port, ()=>{
     console.log(`listen at port ${port}`)
 })
+
+module.exports = app;
