@@ -15,11 +15,6 @@
       "src": "/templates/**",
       "use": "@vercel/node"
     }
-  ],
-  "functions": {
-    "api/app.js": {
-      "runtime": "nodejs16.x",
-      "memory": 512
-    }
-  }
+  ]
+ 
 }
